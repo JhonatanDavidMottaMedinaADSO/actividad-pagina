@@ -50,7 +50,7 @@ header ul li a
 }
 header ul li a:hover
 {
-    color: ;
+    color: rgb(255,255,255,1);
 }
 .banner .content
 {
@@ -70,15 +70,15 @@ header ul li a:hover
 .banner .content .contentBox p
 {
     font-size: 1.2em;
-    color: ;
+    color: #fff;
     font-weight: 300;
 }
 .banner .content .contentBox .btn
 {
     display: inline-block;
     font-size: 1.1em;
-    color: ;
-    background: ;
+    color: #333;
+    background: #fff;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 30px;
@@ -96,13 +96,14 @@ header ul li a:hover
     bottom: 30px;
     right: 60px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }
 .sci h3
 {
     font-weight: 500;
-    color: ;
+    color: rgb(255,255,255,0.75);
     letter-spacing: 1px;
 }
 .sci li
@@ -115,7 +116,7 @@ header ul li a:hover
 }
 .banner .images
 {
-    background: ;
+    background: #fff;
     display: flex;
     flex-wrap: wrap;
 }
@@ -124,5 +125,52 @@ header ul li a:hover
     position: relative;
     width: 50%;
     height: 50vh;
-    background: ;
+    background: #ff0;
+}
+.banner .images .imgBx:nth-child(2)
+{
+background: #f00
+}
+.banner .images .imgBx:nth-child(3)
+{
+width: 100%;
+background: #0ff;
+}
+.banner .images .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+@media (max-width: 991px)
+{
+    .banner
+    {
+        grid-template-columns: 1fr;
+    }
+    header
+    {
+        padding: 20px 40px ;
+    }
+    .banner .content
+    {
+        padding: 40px;
+        height: 70vh;
+    }
+    .sci
+    {
+        right: 40px;
+
+    }
+}
+@media (max-width: 600px)
+{
+    .banner .images .imgBx
+    {
+        width: 100%;
+    }
 }
